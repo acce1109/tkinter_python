@@ -11,11 +11,11 @@ class Project:
         frame.pack(side=TOP, fill=X)
 
 #*********************** MessageBox **************************
-       # mbox.showinfo("Pomoc", "Monkey can live up to 300 yeats.")
-        #answer = mbox.askquestion("Question 1", "Do you like silly faces?")
+       # mbox.showinfo("Pomoc", "Something, something")
+        #answer = mbox.askquestion("Question 1", "Do you think it's a good idea?")
 
         #if answer == "yes":
-         #   print("8===D")
+         #   print(":)")
 
 
 #***********************Main Menu*******************************
@@ -34,20 +34,13 @@ class Project:
 #************************ Toolbar ********************************
 
 
-        self.AXH1 = Checkbutton(frame, text="AXH", command=self.doNothing)
-        self.AXH1.pack(side=LEFT, padx=5, pady=5)
-        self.AXH2 = Checkbutton(frame, text="AXH", command=self.doNothing)
-        self.AXH2.pack(side=LEFT, padx=5, pady=5)
-        self.printButt = Button(frame, text="Print", command=self.doNothing)
-        self.printButt.pack(side=RIGHT, padx=2, pady=2)
-        self.AXH3 = Checkbutton(frame, text="AXH", command=self.doNothing)
-        self.AXH3.pack(side=LEFT, padx=5, pady=5)
-        self.AXH4 = Checkbutton(frame, text="AXH", command=self.doNothing)
-        self.AXH4.pack(side=LEFT, padx=5, pady=5)
-        self.printButt2 = Button(frame, text="Print", command=self.doNothing)
-        self.printButt2.pack(side=RIGHT, padx=2, pady=2)
-        #self.printButton = Button(frame, text="Print message", command=self.printMessage)
-        #self.printButton.pack(side=LEFT, padx=5, pady=5)
+        self.Check1 = Checkbutton(frame, text="Check", command=self.doNothing)
+        self.Check1.pack(side=LEFT, padx=5, pady=5)
+        self.Check2 = Checkbutton(frame, text="Check", command=self.doNothing)
+        self.Check2.pack(side=LEFT, padx=5, pady=5)
+        
+        self.printButton = Button(frame, text="Print message", command=self.printMessage)
+        self.printButton.pack(side=LEFT, padx=5, pady=5)
 
 
 
@@ -91,6 +84,6 @@ class Project:
 
 root = Tk()
 root.title("Something to try on...")
-
+root.geometry("1245x800+0+0")
 start = Project(root)
 root.mainloop()
